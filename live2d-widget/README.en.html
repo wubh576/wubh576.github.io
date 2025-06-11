@@ -14,7 +14,7 @@
 <li><a href="https://live2d-widget.pages.dev/demo/login">demo&#x2F;login.html</a> to imitate the login interface of NPM</li>
 </ul>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>If you are a beginner or only need the basic functionality, you can simply add the following line of code to the <code>head</code> or <code>body</code> of your HTML page to load the widget:</p>
-<pre><code class="html">&lt;script src=&quot;https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.3/dist/autoload.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.3/dist/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>The placement of the code depends on how your website is built. For example, if you are using <a href="https://hexo.io/">Hexo</a>, you need to add the above code to the template file of your theme. The modification process is similar for pages generated using various template engines.<br>If your website uses PJAX, since the widget does not need to be refreshed on every page, make sure to place the script outside the PJAX refresh area.</p>
 <p><strong>However, we strongly recommend configuring the widget yourself to make it more suitable for your website!</strong><br>If you are interested in customizing the widget, please refer to the detailed instructions below.</p>
@@ -91,16 +91,16 @@
 </li>
 </ul>
 <p>To deploy the development testing environment of this project locally, you need to install Node.js and npm, then execute the following commands:</p>
-<pre><code class="bash">git clone https://github.com/stevenjoezhang/live2d-widget.git
+<pre><code class="language-bash">git clone https://github.com/stevenjoezhang/live2d-widget.git
 npm install
 </code></pre>
 <p>If you need to use Cubism 3 or newer models, please download and extract the Cubism SDK for Web separately into the <code>src</code> directory, for example, <code>src/CubismSdkForWeb-5-r.4</code>. Due to Live2D license agreements (including the Live2D Proprietary Software License Agreement and Live2D Open Software License Agreement), this project cannot include the source code of Cubism SDK for Web.<br>If you only need to use Cubism 2 models, you can skip this step. The code in this repository complies with the Redistributable Code terms of the Live2D license agreements.<br>Once completed, use the following command to compile and bundle the project.</p>
-<pre><code class="bash">npm run build
+<pre><code class="language-bash">npm run build
 </code></pre>
 <p>The TypeScript code in the <code>src</code> directory is compiled into the <code>build</code> directory, and the code in the <code>build</code> directory is further bundled into the <code>dist</code> directory.<br>To support both Cubism 2 and Cubism 3 (and newer) models while minimizing code size, Cubism Core and related code are loaded dynamically based on the detected model version.</p>
 <h2 id="Deploy"><a href="#Deploy" class="headerlink" title="Deploy"></a>Deploy</h2><p>After making modifications locally, you can deploy the modified project on a server or load it via a CDN. To make it easier to customize, you can fork this repository and push your modified content to your own repository using <code>git push</code>.</p>
 <h3 id="Using-jsDelivr-CDN"><a href="#Using-jsDelivr-CDN" class="headerlink" title="Using jsDelivr CDN"></a>Using jsDelivr CDN</h3><p>To load forked repository via jsDelivr, the usage method becomes:</p>
-<pre><code class="html">&lt;script src=&quot;https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://fastly.jsdelivr.net/gh/username/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>Replace <code>username</code> with your GitHub username. To ensure the content of the CDN is refreshed correctly, you need to create a new git tag and push it to the GitHub repository. Otherwise, <code>@latest</code> in the URL will still point to the previous version. Additionally, CDN itself has caching, so the changes may take some time to take effect.</p>
 <h3 id="Using-Cloudflare-Pages"><a href="#Using-Cloudflare-Pages" class="headerlink" title="Using Cloudflare Pages"></a>Using Cloudflare Pages</h3><p>You can also deploy using Cloudflare Pages. Create a new project in Cloudflare Pages and select your forked repository. Then, set the build command to <code>npm run build</code>. Once configured, Cloudflare Pages will automatically build and deploy your project.</p>
@@ -116,7 +116,7 @@ npm install
 <pre><code>https://example.com/path/to/live2d-widget/dist/
 </code></pre>
 <p>Make sure to include the trailing <code>/</code> in the path.<br>Once done, add the following code to the interface where you want to add the live2d-widget:</p>
-<pre><code class="html">&lt;script src=&quot;https://example.com/path/to/live2d-widget/dist/autoload.js&quot;&gt;&lt;/script&gt;
+<pre><code class="language-html">&lt;script src=&quot;https://example.com/path/to/live2d-widget/dist/autoload.js&quot;&gt;&lt;/script&gt;
 </code></pre>
 <p>This will load the widget.</p>
 <h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><a href="https://www.browserstack.com/">

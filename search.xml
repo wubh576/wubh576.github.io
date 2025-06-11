@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>使用 Typora 写博客测试模板</title>
+      <link href="/2025/06/11/test_typora/"/>
+      <url>/2025/06/11/test_typora/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><p>图片左对齐测试（可以用于模板）</p><div style="text-align: left; width: 100%;">  <img src="https://wubh-picgo-typora.oss-cn-hangzhou.aliyuncs.com/markdown_image/202506112203630.png"        alt="image-20250611220322501"        style="display: inline-block; zoom:50%;" /></div><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>求斐波那契数列</p><figure class="highlight cpp"><table><tr><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// 代码段测试，代码来源：豆包 AI 生成</span><br><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;iostream&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;string&gt;</span></span><br><br><span class="hljs-comment">// 递归方法计算斐波那契数列</span><br><span class="hljs-function"><span class="hljs-type">long</span> <span class="hljs-type">long</span> <span class="hljs-title">fibonacciRecursive</span><span class="hljs-params">(<span class="hljs-type">int</span> n)</span> </span>&#123;<br>    <span class="hljs-keyword">if</span> (n &lt;= <span class="hljs-number">1</span>)<br>        <span class="hljs-keyword">return</span> n;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">fibonacciRecursive</span>(n - <span class="hljs-number">1</span>) + <span class="hljs-built_in">fibonacciRecursive</span>(n - <span class="hljs-number">2</span>);<br>&#125;<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">char</span>* argv[])</span> </span>&#123;<br>    <span class="hljs-type">int</span> n = <span class="hljs-number">10</span>; <span class="hljs-comment">// 默认计算第10个斐波那契数</span><br>    <br>    <span class="hljs-comment">// 检查命令行参数</span><br>    <span class="hljs-keyword">if</span> (argc &gt; <span class="hljs-number">1</span>) &#123;<br>        n = std::<span class="hljs-built_in">stoi</span>(argv[<span class="hljs-number">1</span>]);<br>    &#125;<br>    <br>    <span class="hljs-comment">// 检查n是否为非负数</span><br>    <span class="hljs-keyword">if</span> (n &lt; <span class="hljs-number">0</span>) &#123;<br>        std::cerr &lt;&lt; <span class="hljs-string">&quot;Error: n must be a non-negative integer.&quot;</span> &lt;&lt; std::endl;<br>        <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;<br>    &#125;<br>    <br>    std::cout &lt;&lt; <span class="hljs-string">&quot;计算第 &quot;</span> &lt;&lt; n &lt;&lt; <span class="hljs-string">&quot; 个斐波那契数&quot;</span> &lt;&lt; std::endl;<br>    std::cout &lt;&lt; <span class="hljs-string">&quot;递归方法结果: &quot;</span> &lt;&lt; <span class="hljs-built_in">fibonacciRecursive</span>(n) &lt;&lt; std::endl;<br>    <br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><br></code></pre></td></tr></table></figure><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><ol><li>有序列表<ol><li>有序列表<ol><li>有序列表</li></ol></li></ol></li></ol><ul><li>无序列表</li><li>无序列表<ul><li>无序列表<ul><li>无序列表</li></ul></li></ul></li></ul><h1 id="字体测试"><a href="#字体测试" class="headerlink" title="字体测试"></a>字体测试</h1><p><strong>加粗</strong></p><p><em>斜体</em></p><p><del>删除线</del></p><p><u>下划线</u></p><p>分割线</p><hr><h2 id="下面是字体渲染"><a href="#下面是字体渲染" class="headerlink" title="下面是字体渲染"></a>下面是字体渲染</h2><p>首先是字体变色</p><figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: red;&quot;</span>&gt;</span></span>红色<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>、<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: blue;&quot;</span>&gt;</span></span>蓝色<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>、<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: maroon;&quot;</span>&gt;</span></span>褐红色<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>、<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: green;&quot;</span>&gt;</span></span>绿色<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>和<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: orange;&quot;</span>&gt;</span></span>橙色<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>都是常见的颜色。这是一段包含 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: purple; font-weight: bold;&quot;</span>&gt;</span></span>紫色加粗<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span> 文本的示例，演示如何在同一句话中应用多种样式。<br></code></pre></td></tr></table></figure><p>效果展示：<span style="color: red;">红色</span>、<span style="color: blue;">蓝色</span>、<span style="color: maroon;">褐红色</span>、<span style="color: green;">绿色</span>和<span style="color: orange;">橙色</span>都是常见的颜色。这是一段包含 <span style="color: purple; font-weight: bold;">紫色加粗</span> 文本的示例，演示如何在同一句话中应用多种样式。</p><p>其次是字体背景色</p><figure class="highlight markdown"><table><tr><td class="code"><pre><code class="hljs markdown"><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #ffcccc;&quot;</span>&gt;</span></span>粉色背景<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>、<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #ccffff;&quot;</span>&gt;</span></span>浅蓝色背景<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>、<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #ffffcc;&quot;</span>&gt;</span></span>浅黄色背景<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>和<br><span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #ccffcc;&quot;</span>&gt;</span></span>浅绿色背景<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span>都是常见的背景色示例。<span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span><br>这是一段包含 <span class="language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #e6ccff; color: #800080; font-weight: bold;&quot;</span>&gt;</span></span>紫色背景+紫色文字<span class="language-xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span> 的示例，演示如何同时应用背景色、文字颜色和其他样式。<br></code></pre></td></tr></table></figure><p>效果展示：<span style="background-color: #ffcccc;">粉色背景</span>、<span style="background-color: #ccffff;">浅蓝色背景</span>、<span style="background-color: #ffffcc;">浅黄色背景</span>和<span style="background-color: #ccffcc;">浅绿色背景</span>都是常见的背景色示例。这是一段包含 <span style="background-color: #e6ccff; color: #800080; font-weight: bold;">紫色背景+紫色文字</span> 的示例，演示如何同时应用背景色、文字颜色和其他样式。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模板 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mytest </tag>
+            
+            <tag> markdown </tag>
+            
+            <tag> template </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>模版博客</title>
+      <link href="/2025/06/11/test/"/>
+      <url>/2025/06/11/test/</url>
+      
+        <content type="html"><![CDATA[<p>这是一个模版博客！</p><h1 id="H1"><a href="#H1" class="headerlink" title="H1"></a>H1</h1><h2 id="H2"><a href="#H2" class="headerlink" title="H2"></a>H2</h2><h3 id="H3"><a href="#H3" class="headerlink" title="H3"></a>H3</h3><h4 id="H4"><a href="#H4" class="headerlink" title="H4"></a>H4</h4><h5 id="H5"><a href="#H5" class="headerlink" title="H5"></a>H5</h5><h6 id="H6"><a href="#H6" class="headerlink" title="H6"></a>H6</h6><p>文字样式<br><em>斜体</em><br><strong>加粗</strong><br><del>删除线 注意这里是英文波浪线</del><br>有序列表</p><ol><li>有序列表<ol><li>有序列表<ol><li>有序列表</li></ol></li></ol></li></ol><ul><li>无序列表<ul><li>无序列表<ul><li>无序列表</li></ul></li></ul></li></ul><p><a href="https://www.baidu.com/">我是个连接</a></p><p><a href="https://www.baidu.com/" title="我是链接标题">我是个连接，悬浮可以看到标题</a></p><p><img src="https://hexo.io/icon/favicon-196x196.png" alt="图片文字" title="悬浮可以看到图片上的文字"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 模版 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mytest </tag>
+            
+            <tag> markdown </tag>
+            
+            <tag> template </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2025/05/31/hello-world/"/>
+      <url>/2025/05/31/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> node.js </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> mytest </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
