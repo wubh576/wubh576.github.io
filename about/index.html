@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>About | Bohui's Blog</title><meta name="author" content="Bohui Wu"><meta name="copyright" content="Bohui Wu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content=".academic-about { color: var(--font-color, #2c3e50); line-height: 1.7; position: relative; } .academic-about .ap-grid {   display: grid;   grid-template-columns: 260px 1fr;   gap: 48px;   align-ite">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About">
+<meta property="og:url" content="https://wubh576.github.io/about/index.html">
+<meta property="og:site_name" content="Bohui&#39;s Blog">
+<meta property="og:description" content=".academic-about { color: var(--font-color, #2c3e50); line-height: 1.7; position: relative; } .academic-about .ap-grid {   display: grid;   grid-template-columns: 260px 1fr;   gap: 48px;   align-ite">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wubh576.github.io/img/avatarlog.png">
+<meta property="article:published_time" content="2026-05-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-05-05T11:07:37.437Z">
+<meta property="article:author" content="Bohui Wu">
+<meta property="article:tag" content="ESFJ, 巨蟹座, Computer Science">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wubh576.github.io/img/avatarlog.png"><link rel="shortcut icon" href="/img/zhandianlog_shushu.svg"><link rel="canonical" href="https://wubh576.github.io/about/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":100,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'About',
+  isHighlightShrink: undefined,
+  isToc: false,
+  pageType: 'page'
+}</script><link rel="stylesheet" href="/self/duotone.css"><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatarlog.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/talk2me/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page type-about" id="body-wrap"><header class="not-top-img fixed" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Bohui's Blog</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/talk2me/"><i class="fa-fw fas fa-comment-dots"></i><span> 留言</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><h1 class="title-seo">About</h1></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="page-title">About</div><div class="container" id="article-container"><div class="academic-about" data-lang="zh">
+
+<style>
+.academic-about { color: var(--font-color, #2c3e50); line-height: 1.7; position: relative; }
+.academic-about .ap-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: start;
+  margin-top: 8px;
+}
+.academic-about .ap-sidebar {
+  position: sticky;
+  top: 90px;
+  text-align: center;
+}
+.academic-about .ap-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--card-bg, #fff);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  margin-bottom: 18px;
+}
+.academic-about .ap-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 4px 0 2px;
+  color: var(--font-color, #222);
+}
+.academic-about .ap-title {
+  font-size: 0.95rem;
+  color: var(--font-color, #555);
+  margin: 0 0 4px;
+}
+.academic-about .ap-affil {
+  font-size: 0.9rem;
+  color: var(--font-color, #888);
+  margin: 0 0 16px;
+  font-style: italic;
+}
+.academic-about .ap-contact {
+  font-size: 0.85rem;
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+}
+.academic-about .ap-contact div { margin: 4px 0; }
+.academic-about .ap-contact i {
+  width: 18px;
+  margin-right: 8px;
+  color: var(--theme-color, #4a7dbe);
+}
+.academic-about .ap-social {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  font-size: 1.25rem;
+}
+.academic-about .ap-social a {
+  color: var(--font-color, #555);
+  transition: color .2s;
+}
+.academic-about .ap-social a:hover { color: var(--theme-color, #4a7dbe); }
+
+.academic-about .ap-main h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 28px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--theme-color, #4a7dbe);
+  display: inline-block;
+}
+.academic-about .ap-main h2:first-child { margin-top: 0; }
+.academic-about .ap-main p { margin: 8px 0; }
+
+.academic-about .ap-news {
+  max-height: 240px;
+  overflow-y: auto;
+  padding: 4px 14px 4px 0;
+  border-left: 3px solid var(--theme-color, #4a7dbe);
+  padding-left: 16px;
+}
+.academic-about .ap-news .news-item {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 12px;
+  margin: 8px 0;
+  font-size: 0.92rem;
+}
+.academic-about .ap-news .news-date {
+  color: var(--theme-color, #4a7dbe);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.academic-about .ap-edu .edu-item,
+.academic-about .ap-pub .pub-item,
+.academic-about .ap-proj .proj-item {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 16px;
+  align-items: start;
+  margin: 14px 0;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
+.academic-about .ap-edu .edu-item:last-child,
+.academic-about .ap-pub .pub-item:last-child,
+.academic-about .ap-proj .proj-item:last-child { border-bottom: none; }
+.academic-about .ap-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.academic-about .item-title { font-weight: 600; margin: 0 0 4px; }
+.academic-about .item-meta { font-size: 0.88rem; color: var(--font-color, #888); margin: 0 0 4px; }
+.academic-about .item-desc { font-size: 0.92rem; margin: 0; }
+.academic-about .pub-venue {
+  display: inline-block;
+  background: var(--theme-color, #4a7dbe);
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 6px;
+  font-weight: 600;
+}
+.academic-about .pub-authors em { color: var(--theme-color, #4a7dbe); font-style: normal; font-weight: 600; }
+.academic-about .pub-links { font-size: 0.85rem; margin-top: 4px; }
+.academic-about .pub-links a {
+  margin-right: 10px;
+  padding: 2px 8px;
+  border: 1px solid var(--theme-color, #4a7dbe);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.academic-about .ap-tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0; }
+.academic-about .ap-tag {
+  background: rgba(74, 125, 190, 0.1);
+  color: var(--theme-color, #4a7dbe);
+  padding: 4px 12px;
+  border-radius: 14px;
+  font-size: 0.85rem;
+}
+
+/* Education timeline */
+.academic-about .ap-edu {
+  position: relative;
+  padding-left: 28px;
+  margin-top: 8px;
+}
+.academic-about .ap-edu::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--theme-color, #4a7dbe), rgba(74,125,190,0.25));
+}
+.academic-about .ap-edu .edu-item {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 4px 0 18px;
+  border-bottom: 1px dashed rgba(0,0,0,0.08);
+}
+.academic-about .ap-edu .edu-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.academic-about .ap-edu .edu-item::before {
+  content: '';
+  position: absolute;
+  left: -29px;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--card-bg, #fff);
+  border: 3px solid var(--theme-color, #4a7dbe);
+  box-sizing: border-box;
+}
+.academic-about .ap-edu .edu-date {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--theme-color, #4a7dbe);
+  background: rgba(74,125,190,0.1);
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+.academic-about .ap-edu .item-title {
+  font-size: 1.05rem;
+  margin: 4px 0 2px;
+}
+.academic-about .ap-edu .item-meta {
+  font-style: italic;
+  margin: 0 0 6px;
+}
+
+/* Language toggle */
+.academic-about .ap-lang-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-flex;
+  background: rgba(74, 125, 190, 0.08);
+  border: 1px solid var(--theme-color, #4a7dbe);
+  border-radius: 999px;
+  overflow: hidden;
+  font-size: 0.8rem;
+  font-weight: 600;
+  user-select: none;
+  z-index: 5;
+}
+.academic-about .ap-lang-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--theme-color, #4a7dbe);
+  padding: 4px 14px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+  font: inherit;
+}
+.academic-about .ap-lang-toggle button.active {
+  background: var(--theme-color, #4a7dbe);
+  color: #fff;
+}
+.academic-about[data-lang="zh"] .lang-en { display: none; }
+.academic-about[data-lang="en"] .lang-zh { display: none; }
+
+@media (max-width: 768px) {
+  .academic-about .ap-grid { grid-template-columns: 1fr; gap: 24px; }
+  .academic-about .ap-sidebar { position: static; }
+  .academic-about .ap-photo { width: 160px; height: 160px; }
+  .academic-about .ap-news .news-item,
+  .academic-about .ap-edu .edu-item,
+  .academic-about .ap-pub .pub-item,
+  .academic-about .ap-proj .proj-item { grid-template-columns: 1fr; }
+  .academic-about .ap-logo { width: 48px; height: 48px; }
+  .academic-about .ap-lang-toggle { position: static; margin: 0 0 16px; }
+}
+</style>
+
+<div class="ap-lang-toggle" role="group" aria-label="Language">
+  <button type="button" data-lang-set="zh" class="active">中</button>
+  <button type="button" data-lang-set="en">EN</button>
+</div>
+
+<div class="ap-grid">
+
+<aside class="ap-sidebar">
+  <img class="ap-photo" src="/img/avatarlog.png" alt="Bohui Wu" />
+  <h1 class="ap-name">Bohui Wu</h1>
+  <p class="ap-title"><span class="lang-zh">硕士研究生在读</span><span class="lang-en">M.S. Student</span></p>
+  <p class="ap-affil">The Chinese University of Hong Kong, Shenzhen</p>
+  <div class="ap-contact">
+    <div><i class="fas fa-envelope"></i>wubh576@gmail.com</div>
+    <div><i class="fas fa-building"></i><span class="lang-zh">办公室 / 实验室</span><span class="lang-en">Office / Lab</span></div>
+  </div>
+  <div class="ap-social">
+    <a href="https://github.com/wubh576" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    <a href="mailto:wubh576@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="#" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+    <a href="/cv.pdf" target="_blank" title="CV"><i class="fas fa-file-alt"></i></a>
+  </div>
+</aside>
+
+<main class="ap-main">
+
+<h2><span class="lang-zh">关于我</span><span class="lang-en">About Me</span></h2>
+
+<div class="lang-zh">
+<p>Hi! 我是 <strong>bohui</strong>，目前在 <em>香港中文大学（深圳）</em> 攻读硕士学位，研究方向是 <em>AI Infra / Serverless / Agent</em>。我所在的实验室是 S4 Lab (Scalable, Sustainable, and Stable Systems Lab)，导师是 <a href="https://mincyu.github.io/" target="_blank" rel="noopener">余旻晨教授</a>。</p>
+
+<p>我的研究兴趣最初起源于 Serverless Computing，主要关注如何在云原生环境下实现更高效、更弹性、也更低成本的计算资源管理。随着 LLM serving 的快速发展，我的研究方向也逐渐延伸到 AI infrastructure，尤其关注大模型推理系统中的调度、弹性扩缩容、KVCache 管理以及长上下文推理等问题。</p>
+
+<p>此外，我一直对新技术和新范式保持较高的兴趣与开放度。随着 Agent、Agent Infra 与 Agentic System 逐渐成为重要的研究方向，我也开始关注如何为更复杂、更动态的智能体应用构建稳定、高效、可扩展的系统支撑。对我来说，做这些工作的核心动机，是希望理解并参与构建下一代 AI 应用背后的基础设施。</p>
+</div>
+
+<div class="lang-en">
+<p>Hi! I'm <strong>Bohui</strong>, currently a master's student at <em>CUHK-Shenzhen</em>, working on <em>AI Infra / Serverless / Agent</em>. I'm part of the S4 Lab (Scalable, Sustainable, and Stable Systems Lab).</p>
+
+<p>My research interest started from serverless computing — how to manage cloud-native compute more efficiently, elastically, and cost-effectively. As LLM serving evolved rapidly, my focus naturally extended to AI infrastructure, especially scheduling, elastic scaling, KV-cache management, and long-context inference in large-model serving systems.</p>
+
+<p>I also try to stay open to new paradigms. As agents, agent infrastructure, and agentic systems are becoming an important research direction, I've been thinking about how to build stable, efficient, and scalable system support for these increasingly complex and dynamic workloads. The driving motivation, for me, is to understand and help build the infrastructure behind the next generation of AI applications.</p>
+</div>
+
+<div class="ap-tags">
+  <span class="ap-tag">Serverless</span>
+  <span class="ap-tag">Systems</span>
+  <span class="ap-tag">AI Infra</span>
+  <span class="ap-tag">Agent</span>
+</div>
+
+<h2><span class="lang-zh">最近动态</span><span class="lang-en">News</span></h2>
+<div class="ap-news">
+  <div class="news-item">
+    <span class="news-date">2026-05</span>
+    <span><span class="lang-zh">字节跳动实习 🎉</span><span class="lang-en">Started building my personal homepage 🎉</span></span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2026-02</span>
+    <span><span class="lang-zh">一篇文章被 ACM TACO (CCF-A) 接收 🎉</span><span class="lang-en">Paper X accepted to conference Y 🎉</span></span>
+  </div>
+  <!-- <div class="news-item">
+    <span class="news-date">2026-03</span>
+    <span><span class="lang-zh">开始一段新的实习 / 项目</span><span class="lang-en">Started a new internship / project</span></span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2025-09</span>
+    <span><span class="lang-zh">入学读研</span><span class="lang-en">Began graduate studies</span></span>
+  </div> -->
+</div>
+
+<h2><span class="lang-zh">教育经历</span><span class="lang-en">Education</span></h2>
+<div class="ap-edu">
+  <div class="edu-item">
+    <div class="edu-date"><span class="lang-zh">2025.09 – 至今</span><span class="lang-en">Sep 2025 – Present</span></div>
+    <p class="item-title"><span class="lang-zh">计算机与信息工程硕士</span><span class="lang-en">M.S. in Computer and Information Engineering</span></p>
+    <p class="item-meta"><span class="lang-zh">香港中文大学（深圳）</span><span class="lang-en">The Chinese University of Hong Kong, Shenzhen</span></p>
+    <p class="item-desc"><span class="lang-zh">研究方向：Serverless / AI Infra / Agent</span><span class="lang-en">Research focus: Serverless / AI Infra / Agent</span></p>
+    <p class="item-desc"><span class="lang-zh">导师：<a href="https://mincyu.github.io/" target="_blank" rel="noopener">余旻晨教授</a></span><span class="lang-en">Advisor: <a href="https://mincyu.github.io/" target="_blank" rel="noopener">Prof. Minchen Yu</a></span></p>
+  </div>
+  <div class="edu-item">
+    <div class="edu-date"><span class="lang-zh">2019.09 – 2023.06</span><span class="lang-en">Sep 2019 – Jun 2023</span></div>
+    <p class="item-title"><span class="lang-zh">软件工程学士</span><span class="lang-en">B.Eng. in Software Engineering</span></p>
+    <p class="item-meta"><span class="lang-zh">东北师范大学</span><span class="lang-en">Northeast Normal University</span></p>
+  </div>
+</div>
+
+<h2><span class="lang-zh">发表论文</span><span class="lang-en">Publications</span></h2>
+<div class="ap-pub">
+  <div class="pub-item">
+    <img class="ap-logo" src="/img/avatarlog.png" alt="Paper teaser" />
+    <div>
+      <p class="item-title">Enabling Low-Latency, GPU-Efficient Serverless Inference with Model Swapping 2026.02</p>
+      <p class="pub-authors">Minchen Yu, Ao Wang, <em>Bohui Wu</em>, Yuxuan Liu, Dong Chen, Haoxuan Yu, Wei Wang, Ruichuan Chen, Dapeng Nie, Haoran Yang, Yu Ding</p>
+      <p class="item-meta">
+        <span class="pub-venue">ACM TACO</span>
+        <span class="pub-venue">CCF-A</span>
+        <span class="pub-links">
+          <a target="_blank" rel="noopener" href="https://dl.acm.org/doi/10.1145/3800690">Paper</a>
+          <a target="_blank" rel="noopener" href="https://github.com/s4-lab-cuhksz/torpor">Code</a>
+        </span>
+      </p>
+    </div>
+  </div>
+  <!-- <div class="pub-item">
+    <img class="ap-logo" src="/img/avatarlog.png" alt="Paper teaser" />
+    <div>
+      <p class="item-title">Another Paper Title</p>
+      <p class="pub-authors">Coauthor X, <em>Bohui Wu</em>, Coauthor Y</p>
+      <p class="item-meta"><span class="pub-venue">Workshop 2025</span><span class="lang-zh">一句话摘要。</span><span class="lang-en">One-line abstract.</span></p>
+      <p class="pub-links">
+        <a href="#">PDF</a>
+      </p>
+    </div> -->
+  </div>
+</div>
+
+<h2><span class="lang-zh">项目</span><span class="lang-en">Projects</span></h2>
+<div class="ap-proj">
+  <div class="proj-item">
+    <img class="ap-logo" src="/img/avatarlog.png" alt="Project logo" />
+    <div>
+      <p class="item-title">Project Name</p>
+      <p class="item-meta"><span class="lang-zh">2025.10 – 2026.01 · 个人 / 团队项目</span><span class="lang-en">Oct 2025 – Jan 2026 · Personal / Team project</span></p>
+      <p class="item-desc"><span class="lang-zh">一句话说项目做了什么、解决了什么问题、你的贡献。</span><span class="lang-en">One sentence on what it does, the problem it solves, and your contribution.</span></p>
+      <p class="pub-links"><a href="#">GitHub</a><a href="#">Demo</a></p>
+    </div>
+  </div>
+  <div class="proj-item">
+    <img class="ap-logo" src="/img/avatarlog.png" alt="Project logo" />
+    <div>
+      <p class="item-title">Another Project</p>
+      <p class="item-meta"><span class="lang-zh">2024 · 课程项目</span><span class="lang-en">2024 · Course project</span></p>
+      <p class="item-desc"><span class="lang-zh">描述……</span><span class="lang-en">Description...</span></p>
+    </div>
+  </div>
+</div>
+
+<h2><span class="lang-zh">荣誉奖项</span><span class="lang-en">Awards & Honors</span></h2>
+
+<ul>
+  <li><strong>2025</strong> · <span class="lang-zh">国家奖学金</span><span class="lang-en">National Scholarship</span></li>
+  <li><strong>2024</strong> · <span class="lang-zh">ACM-ICPC 区域赛 银奖</span><span class="lang-en">ACM-ICPC Regional Contest, Silver Medal</span></li>
+  <li><strong>2023</strong> · <span class="lang-zh">校级优秀学生</span><span class="lang-en">Outstanding Student Award (University-level)</span></li>
+</ul>
+
+<h2><span class="lang-zh">学术服务</span><span class="lang-en">Services</span></h2>
+<p>暂无</p>
+<!-- <ul>
+  <li><span class="lang-zh">审稿人 · Conference / Journal Name (2026)</span><span class="lang-en">Reviewer · Conference / Journal Name (2026)</span></li>
+  <li><span class="lang-zh">助教 · Course Name (2025 秋)</span><span class="lang-en">Teaching Assistant · Course Name (2025 Fall)</span></li>
+</ul> -->
+
+</main>
+
+</div>
+
+<script>
+(function () {
+  var root = document.currentScript.closest('.academic-about') || document.querySelector('.academic-about');
+  if (!root) return;
+  var KEY = 'about-lang';
+  var saved = null;
+  try { saved = localStorage.getItem(KEY); } catch (e) {}
+  var initial = saved || ((navigator.language || 'zh').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+  applyLang(initial);
+
+  root.querySelectorAll('.ap-lang-toggle button[data-lang-set]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyLang(btn.getAttribute('data-lang-set'));
+    });
+  });
+
+  function applyLang(lang) {
+    if (lang !== 'en') lang = 'zh';
+    root.setAttribute('data-lang', lang);
+    try { localStorage.setItem(KEY, lang); } catch (e) {}
+    root.querySelectorAll('.ap-lang-toggle button[data-lang-set]').forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-lang-set') === lang);
+    });
+  }
+})();
+</script>
+
+</div>
+</div></div></main><footer id="footer" style="background-image: url(/img/footerImage.jpg);"><div id="footer-wrap"><div class="copyright">&copy;2025 - 2026 By Bohui Wu</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div><div class="footer_custom_text">Welcome to My Blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script defer src="/live2d-widget/dist/autoload.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
